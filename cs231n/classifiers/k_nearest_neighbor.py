@@ -122,7 +122,7 @@ class KNearestNeighbor(object):
         dists = np.zeros((num_test, num_train))
         #########################################################################
         # TODO:                                                                 #
-        # Compute the l2 distance between all test points and all training      #
+        # Compute the L2 distance between all test points and all training      #
         # points without using any explicit loops, and store the result in      #
         # dists.                                                                #
         #                                                                       #
@@ -130,7 +130,7 @@ class KNearestNeighbor(object):
         # in particular you should not use functions from scipy,                #
         # nor use np.linalg.norm().                                             #
         #                                                                       #
-        # HINT: Try to formulate the l2 distance using matrix multiplication    #
+        # HINT: Try to formulate the L2 distance using matrix multiplication    #
         #       and two broadcast sums.                                         #
         #########################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
