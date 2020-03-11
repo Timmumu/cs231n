@@ -97,14 +97,16 @@ class KNearestNeighbor(object):
         for i in range(num_test):
             #######################################################################
             # TODO:                                                               #
-            # Compute the l2 distance between the ith test point and all training #
+            # Compute the L2 distance between the ith test point and all training #
             # points, and store the result in dists[i, :].                        #
             # Do not use np.linalg.norm().                                        #
             #######################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-
-            pass
-
+            testSplice = X[[i]]
+            testSplice = np.tile(testSplice,(self.X_train.shape[0],1))
+            diff = ((testSplice -self.X_train)**2).sum(axis=1)
+            dists[i,:] = diff
+            # pass
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return dists
 
