@@ -2,7 +2,7 @@ Details about this assignment can be found [on the course webpage](http://cs231n
 
 # compute_distance_no_loop
 
-## Distance Matrix
+#### Distance Matrix
 
 $$A=
 \left[
@@ -27,5 +27,4 @@ $$A=
    \sqrt{(X_{3,1}-Y_{1,1})^2 + (X_{3,2}-Y_{1,2})^2 + (X_{3,3}-Y_{1,3})^2} & \sqrt{(X_{3,1}-Y_{2,1})^2 + (X_{3,2}-Y_{2,2})^2 + (X_{3,3}-Y_{2,3})^2} & \cdots & \sqrt{(X_{3,1}-Y_{6,1})^2 + (X_{3,2}-Y_{6,2})^2 + (X_{3,3}-Y_{6,3})^2}
   \end{matrix} 
 \right ]
-$$
-
+$$ 
